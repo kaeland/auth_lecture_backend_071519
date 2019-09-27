@@ -1,6 +1,5 @@
 class Api::V1::UsersController < ApplicationController
   def profile
-    # byebug
     render json: current_user 
   end
 

@@ -4,7 +4,6 @@ class ApplicationController < ActionController::API
   end
 
   def decode_token
-    # byebug
     begin
       payload = JWT.decode(get_token, "my_secret_key")[0]
     rescue JWT::DecodeError
